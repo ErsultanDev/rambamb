@@ -1,0 +1,94 @@
+//main: ..//style.less
+.b3 {
+    padding: 30px 0;
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 45px;
+        color: rgb(92, 30, 158);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h3 {
+        margin-top: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 27px;
+    }
+
+    h4 {
+        font-size: 24px;
+        text-align: center;
+        font-family: "NotoSerifRegular";
+    }
+
+    .b3_blue {
+        color: rgb(22, 79, 171);
+    }
+
+    .b3_wrapper {
+        .b3_items {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px auto;
+        }
+
+        .b3_item {
+            width: 300px;
+            margin: 0 auto;
+
+        }
+
+        .b3_subtitle {
+            background-image: -moz-linear-gradient(90deg, rgb(22, 81, 172) 0%, rgb(1, 168, 211) 100%);
+            background-image: -webkit-linear-gradient(90deg, rgb(22, 81, 172) 0%, rgb(1, 168, 211) 100%);
+            background-image: -ms-linear-gradient(90deg, rgb(22, 81, 172) 0%, rgb(1, 168, 211) 100%);
+            font-size: 22px;
+            color: rgb(255, 255, 255);
+            margin-bottom: 10px;
+            padding: 5px 0;
+
+            p {
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+
+        .b3_subtitle--two {
+            background-image: -moz-linear-gradient(0deg, rgb(21, 86, 174) 0%, rgb(90, 31, 158) 100%);
+            background-image: -webkit-linear-gradient(0deg, rgb(21, 86, 174) 0%, rgb(90, 31, 158) 100%);
+            background-image: -ms-linear-gradient(0deg, rgb(21, 86, 174) 0%, rgb(90, 31, 158) 100%);
+        }
+
+        .b3_subtitle--three {
+            background-image: -moz-linear-gradient(0deg, rgb(97, 29, 157) 0%, rgb(168, 25, 156) 100%);
+            background-image: -webkit-linear-gradient(0deg, rgb(97, 29, 157) 0%, rgb(168, 25, 156) 100%);
+            background-image: -ms-linear-gradient(0deg, rgb(97, 29, 157) 0%, rgb(168, 25, 156) 100%);
+        }
+
+        .b3_desc {
+            width: 290px;
+            margin: 0 auto;
+            font-family: "NotoSerifBold";
+        }
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    .b3 {
+        .b3_wrapper {
+            .b3_items {
+                flex-direction: column;
+
+                .b3_item {
+                    margin-bottom: 30px;
+                }
+            }
+            .b3_desc{
+                text-align: center;
+            }
+        }
+    }
+}

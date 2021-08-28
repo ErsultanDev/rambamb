@@ -1,0 +1,119 @@
+//main: ..//style.less
+
+.b5 {
+    padding: 30px 0;
+
+    h2 {
+        text-align: center;
+        font-size: 35px;
+        color: rgb(92, 30, 158);
+    }
+
+    .b5_wrapper {
+        margin: 30px auto;
+        display: flex;
+        align-items: center;
+
+        .b5_start {
+            width: 500px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .b5_end {
+            width: 500px;
+            margin: 0 auto;
+
+            span {
+                text-transform: uppercase;
+                font-size: 25px;
+                color: rgb(22, 79, 171);
+            }
+
+            .b5_end_top {
+                margin-bottom: 20px;
+            }
+
+        }
+    }
+
+    .b5_bottom {
+        margin-top: 30px;
+
+        .b5_bottom_wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px auto;
+            width: 900px;
+
+            .b5_bottom_item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                text-align: left;
+            }
+
+            .b5_bottom_img {
+                margin-right: 30px;
+            }
+
+            .b5_bottom_desc {
+                width: 200px;
+            }
+
+        }
+
+        .b5_bottom_subtitile {
+            margin-top: 30px;
+            background-image: -moz-linear-gradient(0deg, rgb(0, 170, 212) 0%, rgb(24, 87, 173) 33%, rgb(92, 30, 158) 66%, rgb(168, 25, 156) 100%);
+            background-image: -webkit-linear-gradient(0deg, rgb(0, 170, 212) 0%, rgb(24, 87, 173) 33%, rgb(92, 30, 158) 66%, rgb(168, 25, 156) 100%);
+            background-image: -ms-linear-gradient(0deg, rgb(0, 170, 212) 0%, rgb(24, 87, 173) 33%, rgb(92, 30, 158) 66%, rgb(168, 25, 156) 100%);
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            font-size: 20px;
+        }
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    .b5 {
+        .b5_wrapper {
+            flex-direction: column;
+            width: 300px;
+
+            .b5_start {
+                width: auto;
+            }
+
+            .b5_end {
+                width: auto;
+            }
+        }
+
+        .b5_bottom {
+            .b5_bottom_wrapper {
+                flex-direction: column;
+                width: 300px;
+                .b5_bottom_item{
+                    flex-direction: column;
+                    text-align: center;
+                    &:first-child{
+                        margin-bottom: 30px;
+                    }
+                }
+                .b5_bottom_img{
+                    margin: 0;
+                }
+            }
+            .b5_bottom_subtitile{
+                width: 300px;
+                margin: 0 auto;
+                padding: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+//main: ..//style.less
+.b6 {
+    h2 {
+        font-size: 40px;
+        color: rgb(92, 30, 158);
+        text-align: center;
+    }
+
+    .b6_wrapper {
+        .b6_items {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+
+            p {
+                font-size: 19px;
+                margin-top: 20px;
+            }
+
+            .b6_item {
+                width: 300px;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:850px) {
+    .b6 {
+        .b6_wrapper {
+            .b6_items {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .b6 {
+      h2{
+          font-size: 35px;
+      }
+    }
+}
