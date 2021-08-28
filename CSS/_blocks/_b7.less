@@ -2,7 +2,8 @@
 
 .b7 {
     padding: 90px 0;
-   .b7_title{
+
+    .b7_title {
         font-size: 30px;
         text-align: center;
         color: rgb(92, 30, 158);
@@ -24,12 +25,26 @@
                 background-image: -ms-linear-gradient(0deg, rgb(0, 170, 212) 0%, rgb(24, 87, 173) 33%, rgb(92, 30, 158) 66%, rgb(168, 25, 156) 100%);
             }
 
-            .b7_desc {
-                margin: 30px auto;
-                font-style: italic;
-                font-size: 20px;
-                font-family: "NotoSerifRegular";
-            }
+
+        }
+    }
+
+    .b7_desc {
+        margin: 30px auto;
+        font-style: italic;
+        font-size: 20px;
+        font-family: "NotoSerifRegular";
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    .b7 {
+        .b7_title{
+            font-size: 25px;
+        }
+        .b7_desc {
+            padding: 0 20px;
         }
     }
 }
